@@ -9,11 +9,10 @@
 
 .reveal .slides section.task-slide .corner-note {
   position: absolute;
-  top: 1rem;
-  left: 1.5rem;
+  top: 0;
+  left: 0;
   margin: 0;
   font-size: 0.5em;
-  line-height: 1.1;
   text-align: left;
   z-index: 2;
 }
@@ -32,4 +31,8 @@
 .reveal .slides section.task-slide .slide-body h3,
 .reveal .slides section.task-slide .slide-body p {
   margin: 0;
+}
+
+.reveal {
+    font-size: 32px;
 }
