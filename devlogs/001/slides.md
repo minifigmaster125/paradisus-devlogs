@@ -32,6 +32,8 @@ Note: I have the concept of a plan, and I'm sure things are bound to change. The
 1. Make a landscape
 2. Build a heightmap by sampling height at regular intervals
 3. Use marching squares convert heightmap to contour map
+<img src="devlogs/001/assets/topographic_map.webp" height="300">
+<img src="devlogs/001/assets/topographic_maps_2.jpg" height="300">
 
 --
 <!-- .slide: class="task-slide" -->
@@ -46,7 +48,7 @@ Note: I have the concept of a plan, and I'm sure things are bound to change. The
     <li>Try it.</li>
     <li>Iterate (later, as needs evolve and concept becomes clearer).</li>
   </ol>
-  <img src="devlogs/001/assets/oops.png" height="300"/>
+    <img src="devlogs/001/assets/test_landscape.png" height="300">
 </div>
 
 --
@@ -60,7 +62,11 @@ Note: I have the concept of a plan, and I'm sure things are bound to change. The
     <li>Sample heights by shooting rays from above</li>
     <li>Write heights to texture</li>
   </ol>
-  <img src="devlogs/001/assets/oops.png" height="300"/>
+  <div style="display:flex;flex-direction:row;gap:30px;align-items:center">
+    <img src="devlogs/001/assets/test_landscape.png" height="300">
+    <p> => </p>
+    <img src="devlogs/001/assets/heightmap.png" height="300"/>
+  </div>
 </div>
 
 
@@ -71,14 +77,20 @@ Note: I have the concept of a plan, and I'm sure things are bound to change. The
 
 <div class="slide-body">
   <h3>Build Contour Map</h3>
-  <div style="display:flex;flex-direction:row;gap:20px">
   <ol>
     <li>For a height <i>H</i>, traverse heightmap, build binary map of which pixels are above or below H</li>
     <li>Apply <a href="https://en.wikipedia.org/wiki/Marching_squares">Marching Squares</a> to binary map</li>
     <li>Draw lines</li>
-    <li>Repeat for height you want a line at </li>
+    <li>Repeat for each height you want a line at </li>
   </ol>
-  <img src="devlogs/001/assets/oops.png" height="300"/>
+  <div style="display:flex;flex-direction:row;gap:30px;align-items:center">
+    <img src="devlogs/001/assets/heightmap.png" height="200">
+    <p> => </p>
+    <img src="devlogs/001/assets/binarymap.png" height="200"/>
+    <p> => </p>
+    <img src="devlogs/001/assets/marching squares.png" height="200"/>
+    <p> => </p>
+    <img src="devlogs/001/assets/contourmap.png" height="200"/>
   </div>
 </div>
 
@@ -86,8 +98,11 @@ Note: I have the concept of a plan, and I'm sure things are bound to change. The
 
 ### Goal: Overlay a v1 <span style="color:#0099ff">fall line map</span> 
 #### wut
-- The path that water would take down a hill i.e the steeping slope
+- Given a location at elevation, the path that water would take downhill i.e the steepest slope
 - Trails that align too closely to the fall line risk erosion.
+- Should be perpendicular to contour lines
+
+<img src="devlogs/001/assets/fall_line_map.jpg" height="200"/>
 --
 <!-- .slide: class="task-slide" -->
 
@@ -99,9 +114,19 @@ Note: I have the concept of a plan, and I'm sure things are bound to change. The
 Use heightmap to find maximum gradient descent
 </li>
 <li>
+Draw onto contour map
+</li>
+<li>
 Tweak visuals
 </li>
 </ol>
+  <div style="display:flex;flex-direction:row;gap:10px;align-items:center">
+    <img src="devlogs/001/assets/heightmap.png" height="300">
+    <p> => </p>
+    <img src="devlogs/001/assets/bad_fall_overlay.png" height="300"/>
+    <p> => </p>
+    <img src="devlogs/001/assets/better_fall_overlay.png" height="300"/>
+  </div>
 </div>
 ---
 
