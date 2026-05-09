@@ -97,12 +97,12 @@ Note: I have the concept of a plan, and I'm sure things are bound to change. The
 ---
 
 ### Goal: Overlay a v1 <span style="color:#0099ff">fall line map</span> 
-#### wut
-- Given a location at elevation, the path that water would take downhill i.e the steepest slope
+- *Fall Line*: Given a location at elevation, the path that water would take downhill i.e the steepest slope
 - Trails that align too closely to the fall line risk erosion.
 - Should be perpendicular to contour lines
 
 <img src="devlogs/001/assets/fall_line_map.jpg" height="200"/>
+<p style="font-size:1rem;padding-top:0;margin-top:-20px">Contour map overlayed by a fall line (indicated in red)</p>
 --
 <!-- .slide: class="task-slide" -->
 
@@ -112,6 +112,15 @@ Note: I have the concept of a plan, and I'm sure things are bound to change. The
 <ol>
 <li>
 Use heightmap to find maximum gradient descent
+$$
+d_x=\frac{h(x_0+1,y_0)-h(x_0-1,y_0)}{2},\quad
+d_y=\frac{h(x_0,y_0+1)-h(x_0,y_0-1)}{2}
+$$
+$$
+\vec d_{\text{steepest}}(x_0,y_0)=
+-\frac{(d_x,d_y)}{\sqrt{d_x^2+d_y^2}}
+$$
+
 </li>
 <li>
 Draw onto contour map
