@@ -45,7 +45,7 @@ Note: There is no right way to make a game. There are faster ways, sure, but you
 --
 <!-- .slide: class="task-slide" -->
 
-<p class="corner-note" style="color:#00ff99">Make a Contour Map</p>
+<p class="corner-note" style="color:#00ff99">make a contour map</p>
 
 <div class="slide-body">
   <h3>Make Landscape</h3>
@@ -61,7 +61,7 @@ Note: There is no right way to make a game. There are faster ways, sure, but you
 --
 <!-- .slide: class="task-slide" -->
 
-<p class="corner-note" style="color:#00ff99">Make a contour map</p>
+<p class="corner-note" style="color:#00ff99">make a contour map</p>
 
 <div class="slide-body">
   <h3>Build a Heightmap</h3>
@@ -80,7 +80,7 @@ Note: There is no right way to make a game. There are faster ways, sure, but you
 --
 <!-- .slide: class="task-slide" -->
 
-<p class="corner-note" style="color:#00ff99">Make a contour map</p>
+<p class="corner-note" style="color:#00ff99">make a contour map</p>
 
 <div class="slide-body">
   <h3>Build Contour Map</h3>
