@@ -1,3 +1,7 @@
+
+.reveal .slides section{
+    line-height: 1.5;
+}
 .reveal .slides section.task-slide {
   position: absolute;
   inset: 0;

@@ -25,7 +25,14 @@ Note: It's a game about desigining natural parks. I stumbled upon this video fro
 - [USDA Trail Maintenance and Construction Guidebook](https://www.fs.usda.gov/sites/default/files/fs_media/fs_document/trail-maintenance-notebook.pdf)
 
 Note: I have the concept of a plan, and I'm sure things are bound to change. There are a lot of decisions in trail design. Distilling the fun from the mundane will be a part of the exploration. 
+---
+## Getting the feet wet
 
+Start off doing anything interesting
+* Contour map
+* Fall line
+
+Note: There is no right way to make a game. There are faster ways, sure, but you have to do what keeps you going.
 ---
 
 ## Goal: Make a v1 <span style="color:#00ff99">contour map</span> 
@@ -139,38 +146,20 @@ Tweak visuals
 </div>
 ---
 
----
+## Ongoing thoughts
 
-## Game translation
+Figure out what the "game" actuallly is
 
-Real trail principle:
 
-> Water running down the trail causes erosion.
+* what % management sim, what % cozy designer?
+* what decisions are actually fun to make vs what is tedious?
+  * e.g. Trail design can change based on soil type. Is that ... interesting or too much?
+* only prototyping will tell
 
-Game mechanic:
-
-> Trails aligned with the fall line accumulate “damage risk.”
-
----
-
-## What changed in the prototype
-
-- Added contour overlay
-- Started gradient sampling
-- Tested fall-line visualization
+Note: technical challenges are interesting, but nobody plays a game because it was interesting to build. 
 
 ---
 
-## What I’m unsure about
+whole presentation including links in Github, check description.
 
-- How much should the player know upfront?
-- Should bad trail choices fail immediately or degrade over time?
-- Should feedback be visual, numerical, or visitor-driven?
 
----
-
-## Next two weeks
-
-- Draw trail ribbons over terrain
-- Score trail grade against hillside slope
-- Show erosion risk preview
