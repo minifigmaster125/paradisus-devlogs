@@ -1,4 +1,4 @@
-# Nature Park Manager Devlogs
+# Project Paradisus Devlogs
 
 This repository hosts Reveal.js slide decks for the Nature Park Manager devlogs, using the published `reveal.js` npm package (not a full clone of the reveal.js source repository).
 
