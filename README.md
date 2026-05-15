@@ -13,7 +13,7 @@ This repository hosts Reveal.js slide decks for the Nature Park Manager devlogs,
    npm run dev
    ```
 
-The deck entrypoint is [`index.html`](./index.html), and the current markdown slide content is in [`devlogs/001/slides.md`](./devlogs/001/slides.md).
+The deck entrypoint is [`index.html`](./index.html), and slide contents can be found in `devlogs/*/slides.md`.
 
 ## Notes
 
