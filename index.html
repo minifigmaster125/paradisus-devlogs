@@ -1,53 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-		/>
-
-		<title>reveal.js</title>
-
-		<link rel="stylesheet" href="dist/reset.css" />
-		<link rel="stylesheet" href="dist/reveal.css" />
-		<link rel="stylesheet" href="dist/theme/black.css" />
-		<link rel="stylesheet" href="custom.css" />
-
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-                <div class="slides">
-                <section data-markdown="devlogs/001/slides.md"
-                        data-separator="^---$"
-                        data-separator-vertical="^--$"
-                        data-separator-notes="^Note:"
-                        data-background-gradient="linear-gradient(to bottom, #222 65%, #242 100%)"
-                        >
-                </section>
-                </div>
-			</div>
-		</div>
-
-		<script src="dist/reveal.js"></script>
-		<script src="dist/plugin/notes.js"></script>
-		<script src="dist/plugin/markdown.js"></script>
-		<script src="dist/plugin/highlight.js"></script>
-        <script src="dist/plugin/math.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-				center: true,
-                // transition: 'none',
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX],
-			});
-		</script>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Nature Park Manager Devlog</title>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-markdown="devlogs/001/slides.md"
+          data-separator="^---$"
+          data-separator-vertical="^--$"
+          data-separator-notes="^Note:"
+          data-background-gradient="linear-gradient(to bottom, #222 65%, #242 100%)"
+        ></section>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
