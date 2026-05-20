@@ -1,6 +1,5 @@
-
-.reveal .slides section{
-    line-height: 1.5;
+.reveal .slides section {
+  line-height: 1.5;
 }
 .reveal .slides section.task-slide {
   position: absolute;
@@ -38,10 +37,20 @@
 }
 
 .reveal {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .reveal .katex-display {
   font-size: 0.5em;
   margin: 0.3em 0;
+}
+
+/* Differentiate GDScript types/classes from function calls */
+.reveal pre code.hljs .hljs-built_in {
+  color: #9be564;
+}
+
+.reveal pre code.hljs .hljs-title.function_,
+.reveal pre code.hljs .hljs-title.function {
+  color: #61dafb;
 }
